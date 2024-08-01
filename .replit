@@ -1,0 +1,7 @@
+run = "python manage.py runserver"
+modules = ["python-3.10"]
+[nix]
+channel = "stable-24_05"
+
+[deployment]
+run = ["sh", "-c", "python manage.py runserver"]
